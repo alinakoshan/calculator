@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    min-height: 100vh;
+    color: #333;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+  }
+  
+  p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+  }
+  
+  form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  }
+  
+  fieldset {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #f9f9f9, #e9e9e9);
+  }
+  
+  legend {
+    font-weight: bold;
+    color: #333;
+    padding: 0 8px;
+  }
+  
+  select, input[type="checkbox"], input[type="radio"] {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  
+  button {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #5a67d8, #6b46c1);
+    transform: scale(1.03);
+  }
+  
+  #result {
+    margin-top: 25px;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+    border: 2px dashed #4CAF50;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  @media (max-width: 600px) {
+    form {
+      padding: 15px;
+    }
+  
+    button {
+      padding: 10px;
+    }
+  }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dowry Calculator (For Academic Purposes)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Dowry Calculator</h1>
+  <p><em>Girls decide the price for the groom and boys decide the price for the bride!</em></p>
+
+  <form id="dowryForm">
+    <fieldset>
+      <legend>Education</legend>
+      <select id="education">
+        <option value="1.5">Undergraduate degree</option>
+        <option value="1.2">College degree</option>
+        <option value="1.05">High school degree</option>
+        <option value="0.9">Middle school degree</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Family Net Worth</legend>
+      <select id="networth">
+        <option value="2">More than 10,000$</option>
+        <option value="1.5">5,000$ - 10,000$</option>
+        <option value="1.2">Less than 5,000$</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Caste</legend>
+      <select id="caste">
+        <option value="100">Brahmin (+100$)</option>
+        <option value="50">Kshatriya (+50$)</option>
+        <option value="20">Vaishya (+20$)</option>
+        <option value="10">Shudra (+10$)</option>
+        <option value="-50">Varna - untouchable (-50$)</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Skills</legend>
+      <label><input type="checkbox" value="10" class="skills"> Playing a musical instrument</label><br>
+      <label><input type="checkbox" value="20" class="skills"> Good cook</label><br>
+      <label><input type="checkbox" value="15" class="skills"> Easygoing character</label><br>
+      <label><input type="checkbox" value="10" class="skills"> Sings well</label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Age</legend>
+      <label><input type="radio" name="age" value="1.5" checked> 18-23</label><br>
+      <label><input type="radio" name="age" value="1.2"> 24-27</label><br>
+      <label><input type="radio" name="age" value="0.95"> 28+</label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Reputation (check if applies)</legend>
+      <label><input type="checkbox" value="0.85" class="reputation"> Gossips about parent's attitude</label><br>
+      <label><input type="checkbox" value="0.9" class="reputation"> Gossips about character</label><br>
+      <label><input type="checkbox" value="-20" class="reputationFlat"> General gossips (-20$)</label><br>
+    </fieldset>
+
+    <button type="button" id="calculateBtn">Calculate Dowry</button>
+  </form>
+
+  <h2 id="result"></h2>
+
+  <script src="script.js"></script>
+</body>
+</html>
